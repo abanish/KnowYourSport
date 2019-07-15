@@ -1,0 +1,50 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="Theme.Default" parent="@android:style/Theme"></style>
+    <style name="Theme.NoTitle" parent="@android:style/Theme.NoTitleBar"></style>
+    <style name="Theme.FullScreen" parent="@android:style/Theme.NoTitleBar.Fullscreen"> </style>
+    <style name="Theme.1Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+           <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowIsFloating">true</item>
+    <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="Theme.2Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+         
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+    
+    
+    
+     <style name="MyTheme" parent="@android:style/Theme.Panel">
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:backgroundDimEnabled">true</item>
+    <item name="android:windowAnimationStyle">@style/MyAnimation.Window</item>
+         <item name="android:windowFullscreen">true</item>
+</style>
+
+<!-- Animations --> 
+<style name="MyAnimation" /> 
+
+<!-- Animations for a non-full-screen window or activity. --> 
+<style name="MyAnimation.Window" parent="@android:style/Animation.Dialog"> 
+    <item name="android:windowEnterAnimation">@anim/rightin</item>
+    <item name="android:windowExitAnimation">@anim/leftin</item>
+      <item name="android:windowFullscreen">true</item>
+     
+    
+</style> 
+ 
+      
+   
+    
+    
+    
+    
+    
+     
+</resources>

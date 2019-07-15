@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100sp"
+        android:background="@drawable/title"
+        android:paddingBottom="50sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10sp"
+        android:layout_weight="0.13"
+        android:background="@drawable/button_rounded"
+        android:onClick="play"
+        android:text="Start"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10sp"
+        android:layout_weight="0.13"
+        android:background="@drawable/button_rounded"
+        android:onClick="instructions"
+        android:text="Instructions"
+        android:textAlignment="center"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10sp"
+        android:layout_weight="0.13"
+        android:onClick="sound"
+        android:text="Sound"
+        android:textAlignment="center"
+        android:textColor="#000000" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10sp"
+        android:layout_weight="0.13"
+        android:background="@drawable/button_rounded"
+        android:onClick="about"
+        android:text="More"
+        android:textAlignment="center"
+        android:textColor="#000000" />
+
+</LinearLayout>
